@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+            animation: color 10s infinite ease-in-out;
+        }
+
+        .login {
+            text-align: center;
+            margin: 8% auto 0;
+            width: 300px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .login h1 {
+            color: #2e2ead;
+            margin: 12px;
+        }
+
+        .input-box {
+            padding: 10px;
+            border-radius: 20px;
+            margin: 10px 0;
+            border: 1px solid rgb(119, 115, 115);
+            outline: none;
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 20px;
+            outline: none;
+            background-color: rgb(91, 91, 141);
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            font-size: 15px;
+        }
+
+        .or {
+            width: 30px;
+            background: #fff;
+            margin: -10px auto 10px;
+        }
+
+        hr {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn1 {
+            background-color: rgb(108, 108, 131);
+            color: rgb(17, 2, 2);
+        }
+
+        @keyframes color {
+
+            0%,
+            100% {
+                background-color: azure;
+            }
+
+            40% {
+                background-color: aquamarine;
+            }
+
+            60% {
+                background-color: cornflowerblue;
+            }
+
+            80% {
+                background-color: dimgray;
+            }
+
+        }
+
+
+        .back {
+            list-style: none;
+            background: linear-gradient(to left, rgb(194, 202, 204), rgb(168, 92, 105));
+
+        }
+
+        .ground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ground li {
+            display: block;
+            list-style: none;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: rgb(189, 133, 181);
+            animation: animate 20s linear infinite;
+
+        }
+
+        .ground li:nth-child(1) {
+            left: 86%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .ground li:nth-child(2) {
+            left: 12%;
+            width: 30px;
+            height: 30px;
+            animation-delay: 1.5s;
+            animation-duration: 10s;
+        }
+
+        .ground li:nth-child(3) {
+            left: 70%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 0s;
+
+
+        }
+
+        .ground li:nth-child(4) {
+            left: 79%;
+            width: 90px;
+            height: 90px;
+            animation-delay: 0s;
+            animation-duration: 15s;
+        }
+
+        .ground li:nth-child(5) {
+            left: 30%;
+            width: 40px;
+            height: 40px;
+            animation-delay: 0s;
+
+
+        }
+
+
+
+
+        .ground li:nth-child(6) {
+            left: 15%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3.5s;
+
+
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(800px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="signup">
+            <div class="back">
+
+                <ul class="ground">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <h1>Login Here</h1>
+            <form action="
+        ">
+                <input type="email" class="input-box" placeholder="Enter Email">
+            </form>
+            <input type="password" class="input-box" placeholder="Enter password"><br>
+
+            <a href="$" class="forgot">Forgot password?</a>
+            <button class="btn" type="button">Login</button>
+            <p>Don't have an account <a href="#">Signup</a>
+                <hr>
+            <p class="or">OR</p>
+            <button class="btn">Login with Google</button>
+            </p>
+            </form>
+
+
+        </div>
+</body>
+
+</html>
